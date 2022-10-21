@@ -1,0 +1,57 @@
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+.wrapper-container {
+        max-width: 900px !important;
+    }
+.arrow-7 {
+    margin: -20px auto -10px auto !important;
+      }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .wrapper-container{
+        max-width: 700px !important;
+    }
+    .about-me__heading {
+        font-size: 50px !important;
+      }
+}
+@media screen and (max-width: 375px) {
+    .wrapper-container{
+        max-width: 340px !important;
+    }
+    .arrow-7 {
+        margin: -40px auto -10px auto !important;
+          }
+    .menu__link a {
+        padding: 10px !important;
+        font-size: 14px !important;
+      }
+      .about-me__heading {
+        font-size: 40px !important;
+      }
+      .about-me__btn{
+        margin: 20% !important;
+      }
+      .text-h5 {
+        font-size: 20px !important;
+      }
+      .card-text {
+        font-size: 14px !important;
+      }
+      .content-page__item {
+        width: 350px !important;
+        .card__title{
+            font-size: 18px;
+        }
+        .card__subtitle{
+            font-size: 11px; width: 330px;
+        }
+      }
+      figure{
+        width: 350px !important; background-color: #fff !important;
+      }
+      .content-page{
+        margin-top: 30px !important;
+      }
+    }
