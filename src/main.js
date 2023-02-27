@@ -8,6 +8,7 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import router from './router'
 
 library.add(faUserSecret, faGithub, faTelegram);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
@@ -22,8 +23,11 @@ new Vue({
   components: { App, FooterComp },
   template: '<App/>',
   vuetify,
+
   created() {
     AOS.init();
   },
+
+  router,
   render: h => h(App)
 }).$mount('#app');
