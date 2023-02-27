@@ -1,4 +1,4 @@
-# portfolio_v2
+# Welcome to my portfolio!
 
 ## Project setup
 ```
