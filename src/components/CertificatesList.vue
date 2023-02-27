@@ -1,6 +1,6 @@
 jpg<template>
   <div class="wrapper-cert">
-    <div class="cert-block wrapper-container">
+    <div class="cert-block wrapper">
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="carousel-wrapper">
           <v-carousel
@@ -71,6 +71,7 @@ export default {
 
 <style lang="scss" scoped>
 @import './src/assets/style/main.scss';
+@import './src/assets/style/responsiveStyle.scss';
 .wrapper-cert {
   background: #6d7177;
 }

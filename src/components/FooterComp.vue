@@ -1,10 +1,10 @@
 <template>
   <footer>
-    <div class="block-footer wrapper-container" id="footer">
+    <div class="block-footer wrapper" id="footer">
       <div class="btn-block">
         <v-btn
           class="button-return"
-          href="#"
+          href="https://myportfolio-orpin-two.vercel.app/"
           id="footer"
           v-scroll-to="'#start'"
           color="indigo darken-1"
@@ -18,7 +18,7 @@
         <a href="https://t.me/MsNaily" class="text-contact">Telegram</a>
         <a href="https://github.com/Anna-Naily" class="text-contact">Github</a>
       </div>
-      <p class="text-copy">&COPY;&ensp;2022 &ensp;Anna Umanskaya</p>
+      <p class="text-copy">&COPY;&ensp;2022-2023 &ensp;Anna Umanskaya</p>
     </div>
   </footer>
 </template>
@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/main.scss';
+@import './src/assets/style/responsiveStyle.scss';
 
 footer {
   background-color: #181e2f;

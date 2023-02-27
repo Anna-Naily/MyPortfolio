@@ -1,18 +1,58 @@
 <template>
   <v-app class="content-block">
-    <h1 class="content-page__heading wrapper-container">Мои работы</h1>
-    <div class="content-page wrapper-container" id="content">
+    <h1 class="content-page__heading wrapper">Мои работы</h1>
+    <div class="content-page wrapper" id="content">
       <div data-aos="zoom-in">
         <div class="content-page__item">
-          <v-card max-width="400" elevation="24">
-            <a class="hover-text-one" href="https://languageportalf.herokuapp.com/">
+          <v-card max-width="600" elevation="24">
+            <router-link to="/helpenhance" class="hover-text-one">
               <figure class="effect-text-two">
-                <v-img :src="require(`../assets/img/helptense.png`)" height="250px" contain></v-img>
+                <v-img :src="require(`../assets/img/helpenhance.png`)" height="288px" contain></v-img>
                 <figcaption>
                   <p>Перейти к просмотру</p>
                 </figcaption>
               </figure>
-            </a>
+            </router-link>
+            <v-card-title class="card__title">HELP ENHANCE</v-card-title>
+
+            <v-card-subtitle class="card__subtitle">
+              <p class="card-subtitle__text">Vue JS</p>
+              <p class="card-subtitle__text">Vuex</p>
+              <p class="card-subtitle__text">HTML</p>
+              <p class="card-subtitle__text">SCSS</p>
+              <p class="card-subtitle__text">Figma</p>
+              <p class="card-subtitle__text">Photoshop</p>
+            </v-card-subtitle>
+            <v-card-actions class="card__link">
+              <v-spacer></v-spacer>
+              <v-btn id="1" color="indigo darken-4" icon @click="show0=!show0">
+                <v-icon id="1">{{ show0 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+              </v-btn>
+            </v-card-actions>
+
+            <v-expand-transition>
+              <div v-show="show0" class="expand-block">
+                <v-divider></v-divider>
+
+                <v-card-text class="card-text">
+                  <p>Коммерческий проект, выполненный по подобию android-приложения.</p>
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+        </div>
+      </div>
+      <div data-aos="zoom-in">
+        <div class="content-page__item">
+          <v-card max-width="600" elevation="24">
+            <router-link to="/helptense" class="hover-text-one">
+              <figure class="effect-text-two">
+                <v-img :src="require(`../assets/img/helptense.png`)" height="288px" contain></v-img>
+                <figcaption>
+                  <p>Перейти к просмотру</p>
+                </figcaption>
+              </figure>
+            </router-link>
             <v-card-title class="card__title">HELPTENSE</v-card-title>
 
             <v-card-subtitle class="card__subtitle">
@@ -21,6 +61,7 @@
               <p class="card-subtitle__text">SCSS</p>
               <p class="card-subtitle__text">Github</p>
               <p class="card-subtitle__text">Figma</p>
+              <p class="card-subtitle__text">Trello</p>
             </v-card-subtitle>
             <v-card-actions class="card__link">
               <v-spacer></v-spacer>
@@ -34,16 +75,7 @@
                 <v-divider></v-divider>
 
                 <v-card-text class="card-text">
-                  <h2>О проекте</h2>Сервис для изучения английского языка был разработан командой разработчиков из 4-х человек с
-                  использованием Agile SCRUM.
-                  <br />Моя роль: Front-end разработчик.
-                  <br />
-                  <br />Сервис включает в себя разделы: учебные материалы, словарь,
-                  интерактивный (обучение с помощью песен, обучение по фильмам и
-                  видео, тестирование, разговорник, перевод на время, проверка
-                  на знание слов), обучение по программам ( начальный уровень,
-                  средний, продвинутый). Также имеется личный профиль, в который
-                  входят: авторизация/регистрация, личный кабинет, мой словарь.
+                  <p>Сервис для изучения английского языка, разработанный командой разработчиков из 4-х человек с использованием Agile SCRUM.</p>
                 </v-card-text>
               </div>
             </v-expand-transition>
@@ -52,24 +84,24 @@
       </div>
       <div data-aos="zoom-in">
         <div class="content-page__item">
-          <v-card class="mx-auto" max-width="400" elevation="24">
-            <a class="hover-text-one" href="https://www.behance.net/gallery/148996927/Online-Store">
+          <v-card class="mx-auto" max-width="600" elevation="24">
+            <router-link to="/onlinestore" class="hover-text-one">
               <figure class="effect-text-two">
                 <v-img
                   class="item-img"
                   :src="require(`../assets/img/verstka.png`)"
-                  height="250px"
+                  height="288px"
                   contain
                 ></v-img>
                 <figcaption>
                   <p>Перейти к просмотру</p>
                 </figcaption>
               </figure>
-            </a>
+            </router-link>
             <v-card-title class="card__title">Online Store</v-card-title>
-
             <v-card-subtitle class="card__subtitle">
               <p class="card-subtitle__text">Vue JS</p>
+              <p class="card-subtitle__text">JavaScript</p>
               <p class="card-subtitle__text">Node JS</p>
               <p class="card-subtitle__text">HTML</p>
               <p class="card-subtitle__text">CSS</p>
@@ -87,21 +119,7 @@
               <div v-show="show2" class="expand-block">
                 <v-divider></v-divider>
 
-                <v-card-text class="card-text">
-                  <h2>О проекте</h2>Разработка интернет-магазина с возможностью заказывать товар из
-                  каталога. Необходимо было сверстать по макетам + разработать
-                  функционал frontend и backend (Node.js) частей + сборка
-                  проекта Webpack.
-                  <br />
-                  <br />Основной функционал в
-                  корзине: при нажатии на товар, каждая его единица добавляется
-                  в корзину, меняется стоимость, есть возможность редактирования
-                  списка покупок.
-                </v-card-text>
-                <v-card-text class="card-text">
-                  <h2>Инструменты</h2>Vue.JS, JavaScript, HTML, CSS, Node.JS, Webpack, Zeplin,
-                  Figma, Github.
-                </v-card-text>
+                <v-card-text class="card-text">Учебный проект по реализации интернет-магазина.</v-card-text>
               </div>
             </v-expand-transition>
           </v-card>
@@ -109,15 +127,15 @@
       </div>
       <div data-aos="zoom-in">
         <div class="content-page__item">
-          <v-card class="mx-auto" max-width="400" elevation="24">
-            <a class="hover-text-one" href="https://personalfinanceapp.vercel.app/">
+          <v-card class="mx-auto" max-width="600" elevation="24">
+            <router-link to="/personalfinance" class="hover-text-one">
               <figure class="effect-text-two">
-                <v-img :src="require(`../assets/img/vueproject.png`)" height="250px" contain></v-img>
+                <v-img :src="require(`../assets/img/vueproject.png`)" height="288px" contain></v-img>
                 <figcaption>
                   <p>Перейти к просмотру</p>
                 </figcaption>
               </figure>
-            </a>
+            </router-link>
             <v-card-title class="card__title">Personal finance app</v-card-title>
 
             <v-card-subtitle class="card__subtitle">
@@ -126,6 +144,7 @@
               <p class="card-subtitle__text">Vuetify</p>
               <p class="card-subtitle__text">HTML</p>
               <p class="card-subtitle__text">CSS</p>
+              <p class="card-subtitle__text">Figma</p>
             </v-card-subtitle>
 
             <v-card-actions class="card__link">
@@ -140,14 +159,9 @@
               <div v-show="show3" class="expand-block">
                 <v-divider></v-divider>
 
-                <v-card-text class="card-text">
-                  <h2>О проекте</h2>Веб-приложение, выполненное на Vue JS, которое позволяет вести учет личных финансовых расходов и наглядно на диаграмме анализировать.
-                  Внутри кода написан
-                  unit-тест.
-                </v-card-text>
-                <v-card-text class="card-text">
-                  <h2>Инструменты</h2>Vue Js, Vuetify, Vuex, Vue Test Utils, HTML, CSS, Github.
-                </v-card-text>
+                <v-card-text
+                  class="card-text"
+                >Веб-приложение, выполненное на Vue JS, которое позволяет вести учет личных финансовых расходов и наглядно на диаграмме анализировать.</v-card-text>
               </div>
             </v-expand-transition>
           </v-card>
@@ -155,10 +169,10 @@
       </div>
       <div data-aos="zoom-in">
         <div class="content-page__item">
-          <v-card class="mx-auto" max-width="400" elevation="24">
+          <v-card class="mx-auto" max-width="600" elevation="24">
             <a class="hover-text-one" href="https://chat-react-azure.vercel.app/chats">
               <figure class="effect-text-two">
-                <v-img :src="require(`../assets/img/chat.png`)" height="250px" contain></v-img>
+                <v-img :src="require(`../assets/img/chat.png`)" height="288px" contain></v-img>
                 <figcaption>
                   <p>Перейти к просмотру</p>
                 </figcaption>
@@ -172,6 +186,7 @@
               <p class="card-subtitle__text">Firebase</p>
               <p class="card-subtitle__text">HTML</p>
               <p class="card-subtitle__text">CSS</p>
+              <p class="card-subtitle__text">Photoshop</p>
             </v-card-subtitle>
             <v-card-actions class="card__link">
               <v-spacer></v-spacer>
@@ -202,8 +217,8 @@
       </div>
     </div>
     <div class="bottom-content">
-      <h2 class="bottom-content__heading wrapper-container">Небольшие проекты и эксперименты</h2>
-      <div class="small-content-page wrapper-container">
+      <h2 class="bottom-content__heading wrapper">Небольшие проекты и эксперименты</h2>
+      <div class="small-content-page wrapper">
         <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <v-tooltip bottom color="deep-purple darken-1" class="small-content-page__item">
             <template v-slot:activator="{ on, attrs }">
@@ -251,6 +266,7 @@ export default {
   name: 'MyWorks',
   data() {
     return {
+      show0: false,
       show1: false,
       show2: false,
       show3: false,
@@ -285,8 +301,8 @@ export default {
   margin-top: 80px;
   display: flex;
   justify-content: space-around;
-
   flex-wrap: wrap;
+  width: 800px;
 }
 .content-page__item {
   margin-bottom: 90px;
@@ -304,7 +320,7 @@ export default {
   margin-left: 10px;
   display: flex;
   justify-content: space-between;
-  width: 378px;
+  width: 480px;
   flex-wrap: wrap;
 }
 .card-subtitle__text {

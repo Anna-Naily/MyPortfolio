@@ -1,57 +1,199 @@
-
-@media screen and (min-width: 769px) and (max-width: 1024px){
-.wrapper-container {
-        max-width: 900px !important;
-    }
-.arrow-7 {
-    margin: -20px auto -10px auto !important;
-      }
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+  .wrapper {
+    max-width: 900px !important;
 }
-
-@media screen and (min-width: 376px) and (max-width: 768px) {
-    .wrapper-container{
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.wrapper {
         max-width: 700px !important;
     }
-    .about-me__heading {
-        font-size: 50px !important;
-      }
-}
-@media screen and (max-width: 375px) {
-    .wrapper-container{
-        max-width: 340px !important;
+    .header-block__info {
+      font-size: 14px !important; 
     }
-    .arrow-7 {
-        margin: -40px auto -10px auto !important;
-          }
-    .menu__link a {
-        padding: 10px !important;
-        font-size: 14px !important;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .wrapper{
+        max-width: 500px !important;
+    }
+    .main-project-block{
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    .header-block__info {
+      font-size: 12px !important; 
+   
+    }
+    .top-block {
+      background: url(../assets/img/mainSmall.png) no-repeat center !important;
+    }
+    .content-page__item{
+      .v-card{
+        max-width: 500px !important; 
       }
-      .about-me__heading {
-        font-size: 40px !important;
+      .effect-text-two{
+        max-width: 500px !important;
       }
-      .about-me__btn{
-        margin: 20% !important;
+      .card__subtitle{
+        width: 380px !important;
+        font-size: 12px !important;
       }
-      .text-h5 {
-        font-size: 20px !important;
-      }
-      .card-text {
-        font-size: 14px !important;
-      }
-      .content-page__item {
-        width: 350px !important;
-        .card__title{
-            font-size: 18px;
-        }
-        .card__subtitle{
-            font-size: 11px; width: 330px;
-        }
-      }
-      figure{
-        width: 350px !important; background-color: #fff !important;
-      }
-      .content-page{
-        margin-top: 30px !important;
-      }
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  .wrapper{
+      max-width: 400px !important;
+  }
+  .top-block {
+    background: url(../assets/img/mainSmall.png) no-repeat center !important;
+  }
+  .contacts-bar{
+    margin-top: 100px !important;
+  }
+  .center-block{
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .about-me__heading{
+    font-size: 30px !important;
+    margin-top: 60px !important;
+  }
+
+  .menu-link {
+    font-size: 14px !important;
+  }
+
+  .main-project-block{
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .header-block__heading{
+    font-size: 55px !important;
+    margin-top: 250px !important;
+    
+  }
+  .header-block__info {
+    font-size: 12px !important; 
+    margin-top: 300px !important;
+    text-align: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    .info-span{
+      margin-bottom: 10px;
+    }
+  }
+  .discription-block__heading{
+    font-size: 55px !important;
+  }
+  .right-bar{
+    width: 400px !important;
+    img{
+      width: 400px !important;
+    }
+  }
+  .content-page__item{
+    .v-card{
+      max-width: 400px !important; 
+    }
+    .effect-text-two{
+      max-width: 400px !important;
+    }
+    .card__subtitle{
+      width: 380px !important;
+      font-size: 12px !important;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .wrapper{
+    max-width: 300px !important;
+}
+.contacts-bar{
+  margin-top: 100px !important;
+}
+.top-block {
+  background: url(../assets/img/mainSmall.png) no-repeat center !important;
+}
+.center-block{
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.menu-link {
+  font-size: 12px !important;
+}
+.about-me__heading{
+  font-size: 30px !important;
+  margin-top: 60px !important;
+ 
+}
+.about-me__text{
+  font-size: 16px !important;
+}
+.main-project-block{
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.header-block__heading{
+  font-size: 55px !important;
+  margin-top: 250px !important; 
+}
+.discription-block__text{
+  font-size: 16px !important;
+}
+.left-bar__heading{
+  text-align: center !important;
+}
+.left-bar{
+  width: auto !important;
+}
+.right-bar{
+  width: 300px !important;
+  img{
+    width: 300px !important;
+  }
+}
+.carousel-content__heading{
+  text-align: center !important;
+}
+.header-block__info {
+  font-size: 12px !important; 
+  margin-top: 200px !important;
+  text-align: center !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  .info-span{
+    margin-bottom: 10px;
+  }
+}
+.discription-block__heading{
+  font-size: 55px !important;
+}
+.content-page__item{
+  .v-card{
+    max-width: 300px !important; 
+  }
+  .effect-text-two{
+    max-width: 300px !important;
+  }
+  .card__subtitle{
+    width: 280px !important;
+    font-size: 12px !important;
+  }
+}
+.small-content-page{
+  flex-direction: column !important;
+  align-items: center !important;
+  .small-content-page__img{
+  width: 200px !important;
+  margin-top: 20px !important;
+}
+
+}
+.tooltip-span{
+  font-size: 14px !important;
+}
+.carousel-block{
+  width: 300px !important;
+  margin: 10px auto !important;
+}
     }
