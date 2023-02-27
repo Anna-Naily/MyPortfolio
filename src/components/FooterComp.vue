@@ -6,7 +6,6 @@
           class="button-return"
           href="https://myportfolio-orpin-two.vercel.app/"
           id="footer"
-          v-scroll-to="'#start'"
           color="indigo darken-1"
           elevation="11"
           large
