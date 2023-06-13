@@ -256,6 +256,23 @@
             <span class="tooltip-span">Респонсивная верстка интернет-магазина</span>
           </v-tooltip>
         </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <v-tooltip bottom color="pink darken-1" class="small-content-page__item">
+            <template v-slot:activator="{ on, attrs }">
+              <a href="https://pokemons-mocha.vercel.app/" class="circle-link">
+                <v-img
+                  class="small-content-page__img"
+                  :src="require(`../assets/img/poke.png`)"
+                  max-height="180"
+                  max-width="180"
+                  v-bind="attrs"
+                  v-on="on"
+                ></v-img>
+              </a>
+            </template>
+            <span class="tooltip-span">Pokemon's API</span>
+          </v-tooltip>
+        </div>
       </div>
     </div>
   </v-app>
