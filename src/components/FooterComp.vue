@@ -4,7 +4,7 @@
       <div class="btn-block">
         <v-btn
           class="button-return"
-          href="https://myportfolio-orpin-two.vercel.app/"
+          @click="scrollTo"
           id="footer"
           color="indigo darken-1"
           elevation="11"
@@ -28,6 +28,11 @@ export default {
 
   data() {
     return {};
+  },
+  methods: {
+    scrollTo() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
   },
 };
 </script>
