@@ -4,6 +4,8 @@ import HelpEnhance from '../views/HelpEnhance.vue';
 import HelpTense from '../views/HelpTense.vue';
 import OnlineStore from '../views/OnlineStore.vue';
 import PersonalFinance from '../views/PersonalFinance.vue';
+import WebIntegrator from '../views/WebIntegrator.vue';
+import FitnessProject from '../views/FitnessProject.vue';
 import HomePage from '../views/HomePage.vue';
 
 Vue.use(VueRouter);
@@ -47,6 +49,22 @@ const routes = [
     component: PersonalFinance,
     meta: {
       title: 'Personal Finance'
+    }
+  },
+  {
+    path: '/webintegrator',
+    name: 'WebIntegrator',
+    component: WebIntegrator,
+    meta: {
+      title: 'WEB Integrator'
+    }
+  },
+  {
+    path: '/fitnessproject',
+    name: 'FitnessProject',
+    component: FitnessProject,
+    meta: {
+      title: 'Fitness Project'
     }
   }
 ];
