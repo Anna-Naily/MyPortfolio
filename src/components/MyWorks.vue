@@ -45,6 +45,86 @@
       <div data-aos="zoom-in">
         <div class="content-page__item">
           <v-card max-width="600" elevation="24">
+            <router-link to="/webintegrator" class="hover-text-one">
+              <figure class="effect-text-two">
+                <v-img :src="require(`../assets/img/webintegrator.png`)" height="288px" contain></v-img>
+                <figcaption>
+                  <p>Перейти к просмотру</p>
+                </figcaption>
+              </figure>
+            </router-link>
+            <v-card-title class="card__title">WEB Integrator</v-card-title>
+
+            <v-card-subtitle class="card__subtitle">
+              <p class="card-subtitle__text">Vue JS</p>
+              <p class="card-subtitle__text">Vuex</p>
+              <p class="card-subtitle__text">Vue Cli</p>
+              <p class="card-subtitle__text">HTML5</p>
+              <p class="card-subtitle__text">SCSS</p>
+              <p class="card-subtitle__text">Figma</p>
+            </v-card-subtitle>
+            <v-card-actions class="card__link">
+              <v-spacer></v-spacer>
+              <v-btn id="5" color="indigo darken-4" icon @click="show5=!show5">
+                <v-icon id="5">{{ show5 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+              </v-btn>
+            </v-card-actions>
+
+            <v-expand-transition>
+              <div v-show="show5" class="expand-block">
+                <v-divider></v-divider>
+
+                <v-card-text class="card-text">
+                  <p>Проект со стажировки (измененный для портфолио)</p>
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+        </div>
+      </div>
+      <div data-aos="zoom-in">
+        <div class="content-page__item">
+          <v-card max-width="600" elevation="24">
+            <router-link to="/fitnessproject" class="hover-text-one">
+              <figure class="effect-text-two">
+                <v-img :src="require(`../assets/img/fitnessproject.png`)" height="288px" contain></v-img>
+                <figcaption>
+                  <p>Перейти к просмотру</p>
+                </figcaption>
+              </figure>
+            </router-link>
+            <v-card-title class="card__title">Fitness Project</v-card-title>
+
+            <v-card-subtitle class="card__subtitle">
+              <p class="card-subtitle__text">HTML5</p>
+              <p class="card-subtitle__text">SCSS</p>
+              <p class="card-subtitle__text">JavaScript</p>
+              <p class="card-subtitle__text">jQuery</p>
+              <p class="card-subtitle__text">Webpack</p>
+              <p class="card-subtitle__text">Figma</p>
+            </v-card-subtitle>
+            <v-card-actions class="card__link">
+              <v-spacer></v-spacer>
+              <v-btn id="6" color="indigo darken-4" icon @click="show6=!show6">
+                <v-icon id="6">{{ show6 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+              </v-btn>
+            </v-card-actions>
+
+            <v-expand-transition>
+              <div v-show="show6" class="expand-block">
+                <v-divider></v-divider>
+
+                <v-card-text class="card-text">
+                  <p>Проект со стажировки (измененный для портфолио)</p>
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+        </div>
+      </div>
+      <div data-aos="zoom-in">
+        <div class="content-page__item">
+          <v-card max-width="600" elevation="24">
             <router-link to="/helptense" class="hover-text-one">
               <figure class="effect-text-two">
                 <v-img :src="require(`../assets/img/helptense.png`)" height="288px" contain></v-img>
@@ -288,6 +368,8 @@ export default {
       show2: false,
       show3: false,
       show4: false,
+      show5: false,
+      show6: false,
     };
   },
   methods: {
